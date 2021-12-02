@@ -1,1 +1,2 @@
-puts "webcamp".upcase
+webcamp = "プログラミング学習"
+puts webcamp
