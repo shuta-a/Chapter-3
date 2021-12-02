@@ -1,2 +1,3 @@
-webcamp = "プログラミング学習"
-puts webcamp
+name = "shuta"
+
+puts name
