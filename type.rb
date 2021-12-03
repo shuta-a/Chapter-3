@@ -1,3 +1,10 @@
-subjects = ["国語", "算数", "理科", "社会"]
+total_price = 120
 
-puts subjects[2]
+if total_price > 100
+  puts "みかんを購入。所持金にあまりあり"
+elsif total_price == 100
+  puts "みかんを購入。所持金は０円"
+else total_price < 100
+  puts "みかんを購入することができません"
+end
+  
