@@ -1,10 +1,30 @@
-total_price = 120
+puts "計算をはじめます"
+puts "何回計算を繰り返しますか？"
 
-if total_price > 100
-  puts "みかんを購入。所持金にあまりあり"
-elsif total_price == 100
-  puts "みかんを購入。所持金は０円"
-else total_price < 100
-  puts "みかんを購入することができません"
-end
+times = gets.to_i
+
+i = 1
+
+while i != times + 1 do
+  puts "#{i}回目の計算"
   
+  puts "２つの値を入力してください"
+  
+  a = gets.to_i
+  b = gets.to_i
+  
+  puts "#{a}"
+  puts "#{b}"
+  
+  puts "計算結果を出力します"
+  
+  puts "a+b=#{a + b}"
+  puts "a-b=#{a - b}"
+  puts "a*b=#{a * b}"
+  puts "a/b=#{a / b}"
+  
+  i += 1
+  
+end
+
+puts "計算を終了します"
