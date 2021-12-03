@@ -1,3 +1,3 @@
-name = "shuta"
+subjects = ["国語", "算数", "理科", "社会"]
 
-puts name
+puts subjects[2]
