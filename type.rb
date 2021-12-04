@@ -1,30 +1,12 @@
-puts "計算をはじめます"
-puts "何回計算を繰り返しますか？"
+def fizzbuzz(num)
+  return 'fizz'  if num%3 == 0 && num%5 != 0
+  return 'buzz'  if num%5 == 0 && num%3 != 0
+  return 'fizzbuzz' if num%3 == 0 && num%5 == 0
+end 
 
-times = gets.to_i
+puts "数字を入力してください"
 
-i = 1
+num = gets.to_i
 
-while i != times + 1 do
-  puts "#{i}回目の計算"
-  
-  puts "２つの値を入力してください"
-  
-  a = gets.to_i
-  b = gets.to_i
-  
-  puts "#{a}"
-  puts "#{b}"
-  
-  puts "計算結果を出力します"
-  
-  puts "a+b=#{a + b}"
-  puts "a-b=#{a - b}"
-  puts "a*b=#{a * b}"
-  puts "a/b=#{a / b}"
-  
-  i += 1
-  
-end
-
-puts "計算を終了します"
+puts "結果は．。。"
+puts fizzbuzz(num)
